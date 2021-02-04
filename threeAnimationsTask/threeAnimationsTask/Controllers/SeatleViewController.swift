@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SeatleViewController: UIViewController {
+final class SeatleViewController: UIViewController {
 
     private var seatleImage = UIImageView(image: UIImage(named: "seattle"))
     private var fierworkView = FireworkView()
@@ -19,8 +19,8 @@ class SeatleViewController: UIViewController {
     }
     
     
-   func setUI() {
-    gradientView.colors = [UIColor.black.cgColor, UIColor.blue.cgColor]
+    private func setUI() {
+        gradientView.colors = [UIColor.black.cgColor, UIColor.blue.cgColor]
         view.addSubview(gradientView)
         view.addSubview(seatleImage)
         view.addSubview(fierworkView)
@@ -28,7 +28,7 @@ class SeatleViewController: UIViewController {
         setupConstraints()
    }
     
-    func setupConstraints() {
+   private func setupConstraints() {
         seatleImage.translatesAutoresizingMaskIntoConstraints = false
         gradientView.translatesAutoresizingMaskIntoConstraints = false
         fierworkView.translatesAutoresizingMaskIntoConstraints = false
@@ -49,6 +49,4 @@ class SeatleViewController: UIViewController {
         ])
     }
     
-    
-
 }

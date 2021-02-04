@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BirthdayViewController: UIViewController {
+final class BirthdayViewController: UIViewController {
     private let birtdayGradient = GradientView()
     private let confetiView = ConfetiParticalView()
     private let congratsLabel = UILabel()

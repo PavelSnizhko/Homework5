@@ -11,19 +11,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let scene = (scene as? UIWindowScene) else { return }
 
         window = UIWindow(windowScene: scene)
         window?.makeKeyAndVisible()
+        
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        
         let myVC = SwapingCollectionViewController(collectionViewLayout: layout)
-        
-        myVC.view.backgroundColor = .purple
-        
         window?.rootViewController = myVC
     }
 

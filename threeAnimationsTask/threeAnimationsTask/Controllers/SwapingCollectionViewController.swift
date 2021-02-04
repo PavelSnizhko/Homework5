@@ -7,24 +7,19 @@
 
 import UIKit
 
-class SwapingCollectionViewController: UICollectionViewController {
+final class SwapingCollectionViewController: UICollectionViewController {
     
-    private var privateViewControllers = [ViewController(), BirthdayViewController(), SeatleViewController()]
+    private var privateViewControllers = [SnowViewController(), BirthdayViewController(), SeatleViewController()]
     
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.backgroundColor = .white
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "myCell")
-        collectionView.isPagingEnabled = true
-        // Do any additional setup after loading the view.
+        configureCollectionView()
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
+      
+    // MARK: - DataSource
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return privateViewControllers.count
@@ -48,13 +43,27 @@ class SwapingCollectionViewController: UICollectionViewController {
         cell.layoutIfNeeded()
         
     }
+    
+    // MARK: - Private Methods
+    
+    private func configureCollectionView() {
+        collectionView.backgroundColor = .white
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "myCell")
+        collectionView.isPagingEnabled = true
+    }
 
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
 
 extension SwapingCollectionViewController:  UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: view.frame.height)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
 }
 

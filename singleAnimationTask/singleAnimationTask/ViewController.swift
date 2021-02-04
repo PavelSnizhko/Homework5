@@ -8,13 +8,13 @@
 import UIKit
 
 
-
-
-
 class ViewController: UIViewController {
+    // MARK: - IBOutlets
+
     @IBOutlet weak var viewForAnimation: CircleAnimationView!
     
-    
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -24,11 +24,10 @@ class ViewController: UIViewController {
     
     }
 
-    
+    // MARK: - IBActions
 
     @IBAction func pressStartAnimation(_ sender: Any) {
         viewForAnimation.updateAnimation()
-        print("pressed")
     }
     
 

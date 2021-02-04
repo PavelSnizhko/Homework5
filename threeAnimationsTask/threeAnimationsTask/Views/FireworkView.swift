@@ -20,7 +20,6 @@ class FireworkView: UIView {
         emitterLayer.masksToBounds = true
         emitterLayer.emitterShape = .point
         emitterLayer.emitterCells = [generateEmitterCell(imageName: "bokeh")]
-        print(frame.height)
         emitterLayer.emitterPosition = CGPoint(x: frame.width / 2, y: frame.height - 100)
         emitterLayer.emitterSize = CGSize(width: 0.0, height: 0.0)
         emitterLayer.emitterMode = .outline

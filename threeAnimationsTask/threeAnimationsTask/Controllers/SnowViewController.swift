@@ -8,7 +8,7 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+final class SnowViewController: UIViewController {
     private lazy var button: UIButton = {
         let button = UIButton()
         button.backgroundColor = .white
@@ -37,7 +37,6 @@ class ViewController: UIViewController {
         view.addSubview(snowingView)
         snowingView.frame = view.bounds
         snowingView.isHidden = true
-        print(snowingView)
         view.addSubview(button)
         setConstraints()
     }

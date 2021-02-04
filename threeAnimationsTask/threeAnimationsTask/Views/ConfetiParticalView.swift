@@ -44,10 +44,8 @@ class ConfetiParticalView: UIView {
         newCell.scale = scale
         newCell.scaleRange = newCell.scale / 4
         newCell.color = color.cgColor
-//        newCell.yAcceleration = 1;
-//        newCell.zAcceleration = 4;
-
         newCell.spinRange = 10;
+        
         return newCell
     }
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE256C9A25CBE34500443AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE256C9925CBE34500443AC9 /* AppDelegate.swift */; };
 		AE256C9C25CBE34500443AC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE256C9B25CBE34500443AC9 /* SceneDelegate.swift */; };
-		AE256C9E25CBE34500443AC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE256C9D25CBE34500443AC9 /* ViewController.swift */; };
+		AE256C9E25CBE34500443AC9 /* SwapingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE256C9D25CBE34500443AC9 /* SwapingCollectionViewController.swift */; };
 		AE256CA125CBE34500443AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE256C9F25CBE34500443AC9 /* Main.storyboard */; };
 		AE256CA325CBE34900443AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE256CA225CBE34900443AC9 /* Assets.xcassets */; };
 		AE256CA625CBE34900443AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE256CA425CBE34900443AC9 /* LaunchScreen.storyboard */; };
@@ -26,7 +26,7 @@
 		AE256C9625CBE34500443AC9 /* threeAnimationsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threeAnimationsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE256C9925CBE34500443AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE256C9B25CBE34500443AC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AE256C9D25CBE34500443AC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE256C9D25CBE34500443AC9 /* SwapingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapingCollectionViewController.swift; sourceTree = "<group>"; };
 		AE256CA025CBE34500443AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE256CA225CBE34900443AC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE256CA525CBE34900443AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 				AE256CD025CBE55400443AC9 /* BirthdayViewController.swift */,
 				AE256CD125CBE55400443AC9 /* SeatleViewController.swift */,
 				AE256CD225CBE55400443AC9 /* SnowViewController.swift */,
-				AE256C9D25CBE34500443AC9 /* ViewController.swift */,
+				AE256C9D25CBE34500443AC9 /* SwapingCollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 			files = (
 				AE256CDE25CBE57600443AC9 /* SnowParticalView.swift in Sources */,
 				AE256CDF25CBE57600443AC9 /* FireworkView.swift in Sources */,
-				AE256C9E25CBE34500443AC9 /* ViewController.swift in Sources */,
+				AE256C9E25CBE34500443AC9 /* SwapingCollectionViewController.swift in Sources */,
 				AE256CD325CBE55400443AC9 /* BirthdayViewController.swift in Sources */,
 				AE256C9A25CBE34500443AC9 /* AppDelegate.swift in Sources */,
 				AE256C9C25CBE34500443AC9 /* SceneDelegate.swift in Sources */,
